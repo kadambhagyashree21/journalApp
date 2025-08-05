@@ -17,6 +17,8 @@ public class AdminController {
 
     @GetMapping
     public ResponseEntity<?> getAll(){
+
+
         return new ResponseEntity<>(userService.getAllUser(), HttpStatus.OK);
     }
 }
